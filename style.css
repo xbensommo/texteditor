@@ -1,0 +1,412 @@
+.Main-WhatsPopingBox
+	{
+		position: relative;
+		border: 1px solid #e6ecf0;
+		border-radius: 0;
+		/*background: #deeff7;*/
+		background: #fdfdfd;
+		padding: 5px;
+
+	}
+
+.WhatsPopingBox
+	{
+		position: relative;
+		background: #f2fbf7;
+		border-radius: 0;
+	}
+
+.WhatsPopingBox-avatar32
+	{
+		width: 32px;
+		height: 32px;
+	}
+
+.user-image
+	{
+		position: absolute !important;
+		left: 5%;
+		top: 11px;
+	}
+
+.whatspoping-wrapper
+	{
+		position: relative;
+		background: inherit;
+		width: 85%;
+		left: 15%;
+
+	}
+
+#lbltextpost
+	{
+		cursor: none;
+	}
+
+.whatspoping-form > .whatspoping-wrapper> textarea.txtwhatspoping, 
+.whatspoping-form > .whatspoping-wrapper> div.txtwhatspoping,
+div.txtwhatspoping
+	{
+		border: 1px solid #e6ecf0;
+		border-radius: 0;
+		width: 100%;
+		padding: 10px !important;
+		transition: height .2s cubic-bezier(0.89,-0.35, 0.01, 1.34);
+		overflow: hidden !important;
+	}
+
+
+.isFocus
+	{
+		outline: -webkit-focus-ring-color auto 5px;
+	}
+
+label.choose
+	{
+		position: absolute !important;
+		right: 7.5px;
+		top: 7.5px;
+		color: #46c0f9;
+		transition: all 0.1s linear;
+	}
+
+label.mainFile-selection-lbl
+	{
+		color: #46c0f9;
+	}
+
+.customFile-selection, .mainFile-selection
+	{
+		width: 0.1px;
+		height: 0.1px;
+		position: absolute;
+		font-style: 0.1px;
+		opacity: 0.1;
+		z-index: -1;
+	}
+
+input[type="file"]#customFile-selection:focus, .no-outline
+	{
+		outline: none !important;
+	}
+
+.displayNon
+	{
+		display: none !important;
+		position: absolute;
+	}
+
+.photoThumb
+	{
+		transition: height 0.2s linear;
+	}
+
+.videoThumb
+	{
+		height: 250px !important;
+		transition: height 0.2s linear;
+	}
+
+.Action-section
+	{
+		position: relative;
+		width: 85%;
+		left: 15%;
+		padding: 1.5px;
+		transition: height 0.2s linear;
+	}
+
+#counter
+	{
+		position: absolute;
+		right: 1px;
+		background: #fff;
+		top: 63px;
+	}
+
+.safe-count
+	{
+		border: none;
+		width: 30px;
+		color: #838a8e;
+		letter-spacing: 0.4px;
+		font-weight: lighter;
+		background: transparent;
+		transition: height 0.2s linear;
+	}
+
+.danger-count
+	{
+		color: #ea2222;
+		transition: color 0.2s linear;
+		border: none;
+		width: 30px;
+		letter-spacing: 0.4px;
+		font-weight: lighter;
+		background: transparent;
+	}
+
+.previewWrapper
+	{
+		width: 100%;
+		max-height: 0;
+		box-sizing: content-box;
+		position: relative;
+		padding: 0;
+		border-radius: 0;
+		background: #deeff7;
+		transition: max-height 0.1s linear;
+		overflow: hidden;
+	}
+
+.thumbnailsPreview
+	{
+		position: relative;
+		width: 100%;
+	}
+
+#Content-Preview
+	{
+		position: relative;
+		width: 100%;
+		padding: 0;
+		overflow-y: hidden;
+	}
+
+.thumbnailPreview
+	{
+		height: 155px;
+		width: 40%;
+		border-radius: 5px;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		overflow: hidden;
+		margin: 1.5px 7.5px;
+	}
+
+@media(min-width: 767px){
+	.thumbnailPreview{
+		width: 25%;
+	}
+}
+
+.thumbnailPreview img
+	{
+		width: 100%;
+		height: 155px;
+	}
+
+.thumbnailPreview:nth-first-child()
+	{
+		margin-left: 15px;
+	}
+
+.thumbnailPreview:nth-last-child()
+	{
+		margin-right: 15px;
+	}
+
+.cancel
+	{
+		color: #3097d1;
+		position: absolute;
+		top: 1px;
+		right: 0px;
+	}
+
+.cancel:hover
+	{
+		color: #d13046;
+	}
+	
+.thumbnailPreview-video
+	{
+		width: 140px;
+		height: 240px;
+		display: inline-block;
+		top: -3px;
+		border-radius: 5px;
+		position: relative;
+		left: 50% !important;
+		margin-left: -70px !important;
+		overflow: hidden !important;
+	}
+
+@media(max-width: 580px){
+	.whatspoping-form > .txtwhatspoping
+		{
+			width: 90% !important;
+		}
+
+	.whatspoping-wrapper
+		{
+			width: 90%;
+			left: 10%;
+		}
+
+	.user-image
+		{
+			left: 2.5%;
+			width: 25px;
+			height: 25px;
+		}
+
+	.Action-section
+		{
+			width: 90% !important;
+			left: 10%;
+		}
+}
+
+@media(min-width: 767px){
+}
+
+.textarea{
+	width: 100%;
+	outline: none;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	border-radius: 3px;
+	overflow: hidden !important;
+}
+
+.textarea::-webkit-scrollbar{
+	width: 1px;
+}
+
+.textarea::-webkit-scrollbar-thumb{
+	background: grey;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.userMention{
+	text-decoration: none !important;
+	color: #0312e0 !important;
+	font-size: 17px;
+	padding: 2.5px;
+	font-weight: 500 !important;
+	background: #c6deec63;
+	font-style: italic;
+}
+.userMention:hover{
+	text-decoration: none !important;
+	cursor: text;
+	color: #79b9d8;
+}
+
+.textEntry{
+	max-height: 88px;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 44px;
+	border: solid 0.5px #e5ecef!important;
+}
+
+.textEntryTyping{
+	height: 88px !important;
+}
+
+.highlighted
+	{
+		background: #03a9f4 !important;
+	}
+
+.visible
+	{
+		display: block !important;
+	}
+
+.autocompletion-25-avatar
+	{
+		position: relative;
+		width: 25px;
+		height: 25px;
+
+	}
+
+.autocompletion, ._autocompletion
+	{
+		list-style: none;
+		display: block;
+		text-align: center;
+		width: auto;
+		max-width: 260px !important;
+		height: auto;
+		max-height: 150px;
+		outline: none;
+		border-radius: 5px;
+		background: #fdfdfc;
+		z-index: 9999;
+		display: none;
+	}
+
+.autocompletion li, ._autocompletion li
+	{
+		padding: 5px;
+		box-sizing: border-box;
+		text-align: left;
+		position: relative;
+		border-radius: 0;
+		background: #fff;
+	}
+
+.autocompletion li:hover, ._autocompletion li:hover
+	{
+		background: #03a9f4;
+	}
+
+.autocompletion li > a, ._autocompletion li > a
+	{
+		text-decoration: none !important;
+		text-align: right;
+		font-weight: lighter;
+		word-spacing: 1px;
+		color: #585c5f;
+	}
+
+.autocompletion li span, ._autocompletion li span
+	{
+		color: #397292 !important;
+		left: 40px; padding-left: 10px;
+	}
+
+.autocompletion li span > a, ._autocompletion li span > a
+	{
+		text-decoration: none;
+		color: #397292;
+	}
+
+.autocompletion li:nth-child(1), ._autocompletion li:nth-child(1)
+ 	{
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+
+.autocompletion li:nth-last-child, ._autocompletion li:nth-last-child
+	{
+		background: red;
+	}
+
+@media(max-width: 480px){
+	.WhatsPopingBox
+		{
+			margin-top: 19px; 
+		}
+}
+
+.whatspoping-wrapper-focus
+	{
+		/*outline: #2777bd solid 1.5px;*/
+		/*border: #2777bd solid .5px;*/
+	}
+
+.thumbnailPreview-video img, .thumbnailPreview-video video
+	{
+		height: 240px;
+		width: 140px;
+	}
+
+/*XBEN SOMMO 2018 && 2017*/
